@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+.header h1{
+    font-family: 'Bebas Neue',sans-serif;
+}
+.header p{
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: -1px;
+}
+.about h1{
+    font-family: 'Bebas Neue',sans-serif;
+}
+.about p{
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: -1px;
+}
+
+.profile-wrap{
+    width: 200px;
+}
+
+.profile-wrap img{
+    mask: url('https://res.cloudinary.com/dk3aalcb0/image/upload/v1690526430/Cafe%20Lumiere/blob_urftxy_2_xno9vw.svg');
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    max-width: 100%;
+    height: 200px; /* Set the desired height here */
+    object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
+}
+
+@media(min-width: 768px) and (max-width: 1019px){
+    .profile-wrap{
+        display: none;
+    }
+}
+@media(min-width: 1020px){
+    .profile-wrap{
+        width: 100%;
+    }
+    .profile-wrap img{
+        height: 500px; /* Set the desired height here */
+        width: 100%;
+    }
+}
+
